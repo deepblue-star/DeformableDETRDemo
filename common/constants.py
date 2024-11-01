@@ -29,11 +29,13 @@ class Constants:
     linemod_dest_dir = os.path.join(linemod_generate_dir, "dest")
     linemod_base_dir = os.path.join(linemod_generate_dir, "base")
 
+    labelme_data_dir = os.path.join(data_root_dir, "custom", "mixed")
+
     """
     数据集设置
     """
     # 选择rtless -> coco需要使用的obj
     # index is coco id, list[coco id] = obj id
     # dataset_objects_ids = [37, 6, 20, 12, 7, 8]
-    dataset_objects_ids = [6]
+    dataset_objects_ids = [6, 7]
     dataset_objects_names = ["obj" + str(i) for i in dataset_objects_ids]
